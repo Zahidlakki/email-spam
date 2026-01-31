@@ -5,7 +5,9 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
 # Download required NLTK data
+
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 
 # Load saved model and vectorizer
@@ -43,3 +45,4 @@ if st.button("Predict"):
         else:
             st.success("✅ This message is NOT Spam (Ham)")
 # streamlit run app.py
+
